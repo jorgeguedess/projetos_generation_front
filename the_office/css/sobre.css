@@ -32,5 +32,5 @@
   content: counter(list-item);
   font-family: "Indie Flower";
   font-size: 1.5em;
-  color: #fbab3f;
+  color: var(--yellow);
 }

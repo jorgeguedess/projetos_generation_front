@@ -7,8 +7,8 @@
 
 .cast__intro {
   width: 100%;
-  background: #142034;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
   padding-block: 2rem;
   padding-left: 1rem;
 }
@@ -21,7 +21,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   overflow: auto;
 }
 
@@ -48,12 +47,12 @@
 .cast__intro__menu a:hover::after,
 .cast__intro__menu a:focus::after {
   width: 100%;
-  background: #ffac3c;
+  background: var(--yellow);
 }
 
 .cast__intro__menu a:hover,
 .cast__intro__menu a:focus {
-  color: #ffac3c;
+  color: var(--yellow);
 }
 
 @media (min-width: 1024px) {
@@ -127,7 +126,7 @@
 }
 
 .cast__card__quote {
-  background: #eee;
+  background: var(--gray);
   padding: 1rem;
   border-radius: 0.5rem;
 

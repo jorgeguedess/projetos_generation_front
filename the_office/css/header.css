@@ -1,7 +1,7 @@
 .header__bg {
   width: 100%;
-  background: #070f1b;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   padding-block: 1rem;
 }
 
@@ -46,10 +46,10 @@
 .header .menu a:hover::after,
 .header .menu a:focus::after {
   width: 100%;
-  background: #ffac3c;
+  background: var(--yellow);
 }
 
 .header .menu a:hover,
 .header .menu a:focus {
-  color: #ffac3c;
+  color: var(--yellow);
 }

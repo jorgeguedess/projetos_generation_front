@@ -1,7 +1,7 @@
 .footer__bg {
   width: 100%;
-  background: #0b1423;
-  color: #fff;
+  background: var(--blue-dark);
+  color: var(--white);
 }
 
 .footer {
@@ -17,5 +17,5 @@
 
 .footer .copyright a:hover,
 .footer .copyright a:focus {
-  color: #ffac3c;
+  color: var(--yellow);
 }

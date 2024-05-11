@@ -33,7 +33,7 @@
 }
 
 .video .video__menu strong {
-  color: #0b1423;
+  color: var(--blue-dark);
 }
 
 @media (min-width: 640px) {

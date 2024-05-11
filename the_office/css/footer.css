@@ -1,0 +1,21 @@
+.footer__bg {
+  width: 100%;
+  background: #0b1423;
+  color: #fff;
+}
+
+.footer {
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.footer .copyright a {
+  padding-block: 0.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer .copyright a:hover,
+.footer .copyright a:focus {
+  color: #ffac3c;
+}

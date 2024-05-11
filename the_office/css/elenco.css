@@ -1,0 +1,154 @@
+#cast {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cast__intro {
+  width: 100%;
+  background: #142034;
+  color: #fff;
+  padding-block: 2rem;
+  padding-left: 1rem;
+}
+
+.cast__intro .title {
+  margin-bottom: 1.25rem;
+}
+
+.cast__intro__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: auto;
+}
+
+.cast__intro__menu li {
+  width: 100%;
+  line-height: 1.4;
+}
+
+.cast__intro__menu li a {
+  width: 100%;
+  font-weight: 500;
+  padding-block: 0.5rem;
+}
+
+.cast__intro__menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  margin-top: 0.25rem;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.cast__intro__menu a:hover::after,
+.cast__intro__menu a:focus::after {
+  width: 100%;
+  background: #ffac3c;
+}
+
+.cast__intro__menu a:hover,
+.cast__intro__menu a:focus {
+  color: #ffac3c;
+}
+
+@media (min-width: 1024px) {
+  #cast {
+    flex-direction: row;
+  }
+  .cast__intro {
+    width: 100%;
+    flex: 30;
+    padding-left: 4rem;
+  }
+
+  .cast__intro__menu {
+    flex-direction: column;
+  }
+
+  .cast__intro__ref {
+    padding: 1rem;
+    max-height: 28rem;
+    position: fixed;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .cast__intro .title {
+    font-size: 1.5rem;
+    max-width: 15ch;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.cast_cards {
+  flex: 70;
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.cast__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cast__card p {
+  max-width: 85ch;
+  line-height: 1.4;
+}
+
+.cast__card img {
+  width: 100%;
+  max-width: 50rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cast__card__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cast__card__quotes {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cast__card__quote {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 85ch;
+}
+
+.cast__card__quote blockquote {
+  line-height: 1.5;
+}
+
+.cast__card__quote blockquote::before {
+  content: open-quote;
+}
+.cast__card__quote blockquote::after {
+  content: close-quote;
+}
+
+.cast__card__quote figcaption {
+  font-weight: 500;
+  margin-top: 1rem;
+}

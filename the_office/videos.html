@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
     <title>The Office - Vídeos</title>
   </head>
   <body>
-    <div class="app">
-      <header class="container header">
-        <div class="header__bg">
-          <a href="/" class="logo">
+    <div id="app">
+      <header class="header__bg">
+        <div class="header container">
+          <a href="/index.html" class="logo">
             <img
-              src="./assets/logo.png"
+              src="./assets/logo.svg"
               class="logo__image"
               alt="Logo"
               width="200"
@@ -20,10 +30,10 @@
           <nav class="navbar">
             <ul class="menu">
               <li class="menu__link">
-                <a href="/">Início</a>
+                <a href="/index.html">Início</a>
               </li>
               <li class="menu__link">
-                <a href="sobre-a-serie.html">Sobre a Série</a>
+                <a href="sobre.html">Sobre a Série</a>
               </li>
               <li class="menu__link">
                 <a href="elenco.html">Elenco</a>
@@ -39,45 +49,88 @@
         </div>
       </header>
       <main class="main">
-        <h1 class="title">Página Vídeos</h1>
-        <section class="videos">
-          <div class="video">
-            <h2>Jim se veste como Dwight</h2>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ybso_PW9LBc"
-              title="Jim imitando o Dwight (LEGENDADO)"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p><strong>Temporada</strong>: 3 ª temporada</p>
-            <p><strong>Epísodio</strong>: 21</p>
-            <p><strong>Nome do episódio</strong>: Product Recall</p>
-          </div>
-          <div class="video">
-            <h2>Oscar explica o orçamento para Michael</h2>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/sDayt8mHpfA"
-              title="The Office - Oscar explica o orçamento para Michael - legendado"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p><strong>Temporada</strong>: 5 ª temporada</p>
-            <p><strong>Epísodio</strong>: 10</p>
-            <p><strong>Nome do episódio</strong>: The Surplus</p>
-          </div>
-        </section>
+        <div class="video__container container">
+          <h1 class="title">Vídeos</h1>
+          <section class="videos">
+            <div class="video">
+              <h2 class="subtitle">Jim se veste como Dwight</h2>
+              <iframe
+                width="560"
+                height="320"
+                src="https://www.youtube.com/embed/ybso_PW9LBc"
+                title="Jim imitando o Dwight (LEGENDADO)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <ul class="video__menu">
+                <li><strong>Temporada</strong>: 3 ª temporada</li>
+                <li><strong>Epísodio</strong>: 21</li>
+                <li><strong>Nome do episódio</strong>: Product Recall</li>
+              </ul>
+            </div>
+            <div class="video">
+              <h2 class="subtitle">Adeus, Toby!</h2>
+              <iframe
+                width="1345"
+                height="480"
+                src="https://www.youtube.com/embed/GjXjLWewB3w"
+                title="Adeus, Toby! - The Office (legendado)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <ul class="video__menu">
+                <li><strong>Temporada</strong>: 4 ª temporada</li>
+                <li><strong>Epísodio</strong>: 14</li>
+                <li><strong>Nome do episódio</strong>: Goodbye, Toby</li>
+              </ul>
+            </div>
+            <div class="video">
+              <h2 class="subtitle">NO GOD, PLEASE NO!</h2>
+              <iframe
+                width="560"
+                height="320"
+                src="https://www.youtube.com/embed/08i9kvCJvJ0"
+                title="NO GOD, PLEASE NO!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <ul class="video__menu">
+                <li><strong>Temporada</strong>: 5 ª temporada</li>
+                <li><strong>Epísodio</strong>: 9</li>
+                <li><strong>Nome do episódio</strong>: Frame Toby</li>
+              </ul>
+            </div>
+            <div class="video">
+              <h2 class="subtitle">Oscar explica o orçamento para Michael</h2>
+              <iframe
+                width="560"
+                height="320"
+                src="https://www.youtube.com/embed/sDayt8mHpfA"
+                title="The Office - Oscar explica o orçamento para Michael - legendado"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <ul class="video__menu">
+                <li><strong>Temporada</strong>: 5 ª temporada</li>
+                <li><strong>Epísodio</strong>: 10</li>
+                <li><strong>Nome do episódio</strong>: The Surplus Recall</li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
-      <footer class="footer container">
-        <div class="footer__bg">
-          <span
+      <footer class="footer__bg">
+        <div class="footer container">
+          <span class="copyright"
             >Feito com ❤️ por
             <a href="https://www.linkedin.com/in/jorgeguedess/" target="_blank"
               >Jorge Guedes</a

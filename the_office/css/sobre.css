@@ -1,0 +1,36 @@
+.about__container {
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__container .title,
+.about__container .subtitle {
+  margin-bottom: 2rem;
+}
+
+.about__container .description:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.menu_curiosities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu_curiosities li {
+  max-width: 90ch;
+  line-height: 1.5;
+  padding-left: 0.5em;
+  font-size: #444;
+}
+
+.menu_curiosities li::marker {
+  content: counter(list-item);
+  font-family: "Indie Flower";
+  font-size: 1.5em;
+  color: #fbab3f;
+}

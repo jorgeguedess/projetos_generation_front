@@ -1,0 +1,54 @@
+@import url("./global.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./galeria.css");
+@import url("./sobre.css");
+@import url("./videos.css");
+@import url("./elenco.css");
+
+.main {
+  width: 100%;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+
+  background: url("../assets/banner.webp") no-repeat top / cover;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  z-index: 1;
+}
+
+.home__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home__content .title {
+  font-size: clamp(1.5rem, 50vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.home__content .description {
+  max-width: 95ch;
+}

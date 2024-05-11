@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
     <title>The Office</title>
   </head>
   <body>
-    <div class="app">
-      <header class="header container">
-        <div class="header__bg">
-          <a href="/" class="logo">
+    <div id="app">
+      <header class="header__bg">
+        <div class="header container">
+          <a href="/index.html" class="logo">
             <img
-              src="./assets/logo.png"
+              src="./assets/logo.svg"
               class="logo__image"
               alt="The Office"
               width="200"
@@ -21,10 +31,10 @@
           <nav class="navbar">
             <ul class="menu">
               <li class="menu__link">
-                <a href="/">Início</a>
+                <a href="/index.html">Início</a>
               </li>
               <li class="menu__link">
-                <a href="sobre-a-serie.html">Sobre a Série</a>
+                <a href="sobre.html">Sobre a Série</a>
               </li>
               <li class="menu__link">
                 <a href="elenco.html">Elenco</a>
@@ -39,11 +49,11 @@
           </nav>
         </div>
       </header>
-      <main class="main container">
+      <main class="main">
         <section class="home">
-          <div class="home__content">
+          <div class="home__content container">
             <h1 class="title">The Office</h1>
-            <p>
+            <p class="description">
               "The Office" é uma série de comédia americana que se passa no
               escritório da Dunder Mifflin Paper Company, em Scranton,
               Pensilvânia. Criada por Greg Daniels, a série apresenta um formato
@@ -52,20 +62,11 @@
               gerente Michael Scott
             </p>
           </div>
-          <div class="home__image">
-            <img
-              src="./assets/banner.webp"
-              width="100%"
-              alt="Imagem promocional de sete
-            personagens do programa 'the office', com Michael Scott em primeiro
-            plano e outros atrás dele, sorrindo contra um fundo azul claro"
-            />
-          </div>
         </section>
       </main>
-      <footer class="footer container">
-        <div class="footer__bg">
-          <span
+      <footer class="footer__bg">
+        <div class="footer container">
+          <span class="copyright"
             >Feito com ❤️ por
             <a href="https://www.linkedin.com/in/jorgeguedess/" target="_blank"
               >Jorge Guedes</a

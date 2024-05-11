@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
     <title>The Office - Elenco</title>
   </head>
   <body>
-    <div class="app">
-      <header class="container header">
-        <div class="header__bg">
-          <a href="/" class="logo">
+    <div id="app">
+      <header class="header__bg">
+        <div class="header container">
+          <a href="/index.html" class="logo">
             <img
-              src="./assets/logo.png"
+              src="./assets/logo.svg"
               class="logo__image"
               alt="Logo"
               width="200"
@@ -20,10 +30,10 @@
           <nav class="navbar">
             <ul class="menu">
               <li class="menu__link">
-                <a href="/">Início</a>
+                <a href="/index.html">Início</a>
               </li>
               <li class="menu__link">
-                <a href="sobre-a-serie.html">Sobre a Série</a>
+                <a href="sobre.html">Sobre a Série</a>
               </li>
               <li class="menu__link">
                 <a href="elenco.html">Elenco</a>
@@ -38,666 +48,615 @@
           </nav>
         </div>
       </header>
-      <main class="main container">
-        <h1 class="title">Conheça o elenco de The Office!</h1>
-        <nav class="ref_cast">
-          <ul>
-            <li>
-              <a href="#michael-scott">Michael Scott</a>
-            </li>
-            <li>
-              <a href="#dwight-schrute">Dwight Schrute</a>
-            </li>
-            <li>
-              <a href="#jim-halpert">Jim Halpert</a>
-            </li>
-            <li>
-              <a href="#pam-beesly">Pam Beesly</a>
-            </li>
-            <li>
-              <a href="#ryan-howard">Ryan Howard</a>
-            </li>
-            <li>
-              <a href="#stanley-hudson">Stanley Hudson</a>
-            </li>
-            <li>
-              <a href="#kelly-kapoor">Kelly Kapoor</a>
-            </li>
-            <li>
-              <a href="#darryl-philbin">Darryl Philbin</a>
-            </li>
-            <li>
-              <a href="#toby-flenderson">Toby Flenderson</a>
-            </li>
-            <li>
-              <a href="#oscar-martinez">Oscar Martinez</a>
-            </li>
-            <li>
-              <a href="#kevin-malone">Kevin Malone</a>
-            </li>
-            <li>
-              <a href="#phyllis-lapin">Phyllis Lapin</a>
-            </li>
-            <li>
-              <a href="#angela-martin">Angela Martin</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="cast">
-          <div class="cast__card" id="michael-scott">
-            <h2 class="cast__card__name">Steve Carell (Michael Scott)</h2>
-            <p>
-              Gerente regional da filial de Scranton da Dunder Mifflin Paper
-              Company, acha que é o melhor amigo de todos no escritório; os
-              funcionários, no entanto, sentem o contrário.
-            </p>
-            <img
-              src="./assets/elenco/michael-scout.webp"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>Nome de nascimento: <strong>Steve John Carell</strong></li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>16 de agosto de 1962</strong></li>
-              <li>Idade: <strong>61 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+      <main class="main">
+        <div>
+          <section id="cast">
+            <div class="cast__intro">
+              <div class="cast__intro__ref">
+                <h1 class="title">Conheça o elenco de The Office!</h1>
+                <nav class="cast__intro__nav">
+                  <ul class="cast__intro__menu">
+                    <li>
+                      <a href="#michael-scott">Michael Scott</a>
+                    </li>
+                    <li>
+                      <a href="#dwight-schrute">Dwight Schrute</a>
+                    </li>
+                    <li>
+                      <a href="#jim-halpert">Jim Halpert</a>
+                    </li>
+                    <li>
+                      <a href="#pam-beesly">Pam Beesly</a>
+                    </li>
+                    <li>
+                      <a href="#ryan-howard">Ryan Howard</a>
+                    </li>
+                    <li>
+                      <a href="#stanley-hudson">Stanley Hudson</a>
+                    </li>
+                    <li>
+                      <a href="#kelly-kapoor">Kelly Kapoor</a>
+                    </li>
+                    <li>
+                      <a href="#darryl-philbin">Darryl Philbin</a>
+                    </li>
+                    <li>
+                      <a href="#toby-flenderson">Toby Flenderson</a>
+                    </li>
+                    <li>
+                      <a href="#oscar-martinez">Oscar Martinez</a>
+                    </li>
+                    <li>
+                      <a href="#kevin-malone">Kevin Malone</a>
+                    </li>
+                    <li>
+                      <a href="#phyllis-lapin">Phyllis Lapin</a>
+                    </li>
+                    <li>
+                      <a href="#angela-martin">Angela Martin</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="cast_cards container">
+              <div class="cast__card" id="michael-scott">
+                <h2 class="cast__card__name">Steve Carell (Michael Scott)</h2>
+                <p>
+                  Gerente regional da filial de Scranton da Dunder Mifflin Paper
+                  Company, acha que é o melhor amigo de todos no escritório; os
+                  funcionários, no entanto, sentem o contrário.
+                </p>
+                <img
+                  src="./assets/elenco/michael-scout.webp"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q> Foi o que ela disse - Michael Scott </q>
+                    Nome de nascimento: <strong>Steve John Carell</strong>
                   </li>
-                  <li>
-                    <q>
-                      Às vezes, eu começo uma frase e eu nem sei aonde ela vai
-                      parar. Eu só espero encontrar o sentido ao longo do
-                      caminho - Michael Scott
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Se eu preferiria ser temido ou amado? Fácil. Ambos. Eu
-                      quero que as pessoas tenham medo do quanto elas me amam -
-                      Michael Scott
-                    </q>
-                  </li>
-                  <li>
-                    <q> Eu... declaro... FALÊNCIA! - Michael Scott </q>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="dwight-schrute">
-            <h2 class="cast__card__name">Dwight Schrute (Rainn Wilson)</h2>
-            <p>
-              Assistente do gerente regional, é um premiado vendedor e
-              voluntário reserva do xerife de Lackawanna, conhecido por sua
-              personalidade autoritária e fanatismo por ficção científica. Há
-              uma rivalidade constante entre Jim e Dwight, cujas personalidades
-              contrastantes frequentemente levam a conflitos
-            </p>
-            <img
-              src="./assets/elenco/dwight-schrute.jpg"
-              alt="Dwight Schrute  de terno e gravata olhando seriamente para câmera"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento: <strong>Rainn Dietrich Wilson</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>20 de janeiro de 1968</strong></li>
-              <li>Idade: <strong>56 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
-                  <li>
-                    <q>
-                      Você vive apenas uma vez? Falso! Você vive todos os dias.
-                      E morre apenas uma vez. - Dwight Schrute
-                    </q>
-                  </li>
-                  <li>
-                    <q> Eu não acredito em você. Continue - Dwight Schrute </q>
-                  </li>
-                  <li>
-                    <q> Desta vez, fumar vai salvar vidas. - Dwight Schrute </q>
-                  </li>
-                  <li>
-                    <q>
-                      Como eu me descreveria? Três palavras: macho-alfa,
-                      trabalhador duro, impiedoso… insaciável… - Dwight Schrute
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>16 de agosto de 1962</strong></li>
+                  <li>Idade: <strong>61 anos</strong></li>
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>Foi o que ela disse</blockquote>
+                      <blockquote>
+                        Às vezes, eu começo uma frase e eu nem sei aonde ela vai
+                        parar. Eu só espero encontrar o sentido ao longo do
+                        caminho
+                      </blockquote>
+                      <blockquote>
+                        Se eu preferiria ser temido ou amado? Fácil. Ambos. Eu
+                        quero que as pessoas tenham medo do quanto elas me amam
+                      </blockquote>
+                      <blockquote>Eu... declaro... FALÊNCIA!</blockquote>
+                      <figcaption>
+                        &mdash; <cite>Michael Scott</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="jim-halpert">
-            <h2 class="cast__card__name">Jim Halpert (John Krasinski)</h2>
-            <p>
-              Um dos vendedores da Dunder Mifflin, tem uma forte amizade marcada
-              por uma tensão romântica, com a recepcionista Pam.
-            </p>
-            <img
-              src="./assets/elenco/jim-halpert-.jpg"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>Nome de nascimento: <strong>John Burke Krasinski</strong></li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>20 de outubro de 1979</strong></li>
-              <li>Idade: <strong>44 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="dwight-schrute">
+                <h2 class="cast__card__name">Dwight Schrute (Rainn Wilson)</h2>
+                <p>
+                  Assistente do gerente regional, é um premiado vendedor e
+                  voluntário reserva do xerife de Lackawanna, conhecido por sua
+                  personalidade autoritária e fanatismo por ficção científica.
+                  Há uma rivalidade constante entre Jim e Dwight, cujas
+                  personalidades contrastantes frequentemente levam a conflitos
+                </p>
+                <img
+                  src="./assets/elenco/dwight-schrute.jpg"
+                  alt="Dwight Schrute  de terno e gravata olhando seriamente para câmera"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Estou prestes a fazer algo muito ousado neste trabalho que
-                      nunca fiz antes: tentar - Jim Halpert
-                    </q>
+                    Nome de nascimento: <strong>Rainn Dietrich Wilson</strong>
                   </li>
-                  <li>
-                    <q>
-                      Tudo o que tenho devo a este trabalho. Esse trabalho
-                      estúpido, maravilhoso, chato e incrível - Jim Halpert
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Ter um filho é cansativo. Ter dois bebês? Agora isso é
-                      apenas maldade - Jim Halpert
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Esta é a menor quantidade de poder que já vi subir à
-                      cabeça de alguém - Jim Halpert
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>20 de janeiro de 1968</strong></li>
+                  <li>Idade: <strong>56 anos</strong></li>
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Você vive apenas uma vez? Falso! Você vive todos os
+                        dias. E morre apenas uma vez.
+                      </blockquote>
+                      <blockquote>Eu não acredito em você. Continue</blockquote>
+                      <blockquote>
+                        Desta vez, fumar vai salvar vidas.
+                      </blockquote>
+                      <blockquote>
+                        Como eu me descreveria? Três palavras: macho-alfa,
+                        trabalhador duro, impiedoso… insaciável…
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Dwight Schrute</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="pam-beesly">
-            <h2 class="cast__card__name">Pam Beesly (Jenna Fischer)</h2>
-            <p>
-              Recepcionista da Dunder Mifflin, começa a série como noiva do
-              entregador Roy
-            </p>
-            <img
-              src="./assets/elenco/pam-halpert.webp"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento: <strong>Regina Marie Jenna Fischer</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>7 de março de 1974</strong></li>
-              <li>Idade: <strong>50 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="jim-halpert">
+                <h2 class="cast__card__name">Jim Halpert (John Krasinski)</h2>
+                <p>
+                  Um dos vendedores da Dunder Mifflin, tem uma forte amizade
+                  marcada por uma tensão romântica, com a recepcionista Pam.
+                </p>
+                <img
+                  src="./assets/elenco/jim-halpert-.jpg"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Não me importo com o que dizem de mim. Eu só quero comer!
-                      - Pam Beesly
-                    </q>
+                    Nome de nascimento: <strong>John Burke Krasinski</strong>
                   </li>
-                  <li>
-                    <q>
-                      Uma vez a cada hora, alguém está envolvido em um spam na
-                      internet - Pam Beesly
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Quando você é criança, você assume que seus pais são almas
-                      gêmeas - Pam Beesly
-                    </q>
-                  </li>
-                  <li>
-                    <q> Seja forte. Confie em si mesmo. Ame-se - Pam Beesly </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>20 de outubro de 1979</strong></li>
+                  <li>Idade: <strong>44 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Estou prestes a fazer algo muito ousado neste trabalho
+                        que nunca fiz antes: tentar
+                      </blockquote>
+                      <blockquote>
+                        Tudo o que tenho devo a este trabalho. Esse trabalho
+                        estúpido, maravilhoso, chato e incrível
+                      </blockquote>
+                      <blockquote>
+                        Ter um filho é cansativo. Ter dois bebês? Agora isso é
+                        apenas maldade
+                      </blockquote>
+                      <blockquote>
+                        Esta é a menor quantidade de poder que já vi subir à
+                        cabeça de alguém
+                      </blockquote>
+                      <figcaption>&mdash; <cite>Jim Halpert</cite></figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="ryan-howard">
-            <h2 class="cast__card__name">Ryan Howard (B.J. Novak)</h2>
-            <p>Estagiário e estudante de administração</p>
-            <img
-              src="./assets/elenco/ryan-howard.avif"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Benjamin Joseph Manaly Novak</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>31 de julho de 1979</strong></li>
-              <li>Idade: <strong>44 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="pam-beesly">
+                <h2 class="cast__card__name">Pam Beesly (Jenna Fischer)</h2>
+                <p>
+                  Recepcionista da Dunder Mifflin, começa a série como noiva do
+                  entregador Roy
+                </p>
+                <img
+                  src="./assets/elenco/pam-halpert.webp"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Prefiro que ela esteja sozinha do que com alguém. Isso é
-                      amor? - Ryan Howard
-                    </q>
+                    Nome de nascimento:
+                    <strong>Regina Marie Jenna Fischer</strong>
                   </li>
-                  <li>
-                    <q>
-                      As pessoas continuam me chamando de prodígio - Ryan Howard
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Sinto falta dos dias em que só havia uma festa que eu não
-                      queria ir - Ryan Howard
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Sou tão perfeccionista que prefiro não fazer isso do que
-                      fazer uma versão de caixa - Ryan Howard
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>7 de março de 1974</strong></li>
+                  <li>Idade: <strong>50 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Não me importo com o que dizem de mim. Eu só quero
+                        comer! tentar
+                      </blockquote>
+                      <blockquote>
+                        Uma vez a cada hora, alguém está envolvido em um spam na
+                        internet
+                      </blockquote>
+                      <blockquote>
+                        Quando você é criança, você assume que seus pais são
+                        almas gêmeas
+                      </blockquote>
+                      <blockquote>
+                        Seja forte. Confie em si mesmo. Ame-se
+                      </blockquote>
+                      <figcaption>&mdash; <cite>Pam Beesly</cite></figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="stanley-hudson">
-            <h2 class="cast__card__name">
-              Stanley Hudson (Leslie David Baker)
-            </h2>
-            <p>
-              Vendedor. Mal humorado, participa de má-vontade das frequentes
-              reuniões promovidas por Michael, ora cochilando, ora fazendo
-              palavras-cruzadas.
-            </p>
-            <img
-              src="./assets/elenco/stanley-hudson.jpg"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Leslie David Baker</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>19 de fevereiro de 1958</strong></li>
-              <li>Idade: <strong>66 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="ryan-howard">
+                <h2 class="cast__card__name">Ryan Howard (B.J. Novak)</h2>
+                <p>Estagiário e estudante de administração</p>
+                <img
+                  src="./assets/elenco/ryan-howard.avif"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q> Você é um idiota profissional - Stanley Hudson </q>
+                    Nome de nascimento:
+                    <strong>Benjamin Joseph Manaly Novak</strong>
                   </li>
-                  <li>
-                    <q>
-                      Não peço desculpas, a menos que ache que estou errado e,
-                      se você não gostar, pode ir embora - Stanley Hudson
-                    </q>
-                  </li>
-                  <li>
-                    <q> Eu gaguejei!? - Stanley Hudson </q>
-                  </li>
-                  <li>
-                    <q>
-                      Rapaz, você perdeu a cabeça, porque eu vou ajudá-lo a
-                      encontrá-la! - Stanley Hudson
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>31 de julho de 1979</strong></li>
+                  <li>Idade: <strong>44 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Prefiro que ela esteja sozinha do que com alguém. Isso é
+                        amor?
+                      </blockquote>
+                      <blockquote>
+                        As pessoas continuam me chamando de prodígio
+                      </blockquote>
+                      <blockquote>
+                        Sinto falta dos dias em que só havia uma festa que eu
+                        não queria ir
+                      </blockquote>
+                      <blockquote>
+                        Sou tão perfeccionista que prefiro não fazer isso do que
+                        fazer uma versão de caixa
+                      </blockquote>
+                      <figcaption>&mdash; <cite>Ryan Howard</cite></figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="kelly-kapoor">
-            <h2 class="cast__card__name">Kelly Kapoor (Mindy Kaling)</h2>
-            <p>
-              Responsável pelo atendimento ao cliente. Fútil e faladora, tem
-              ascendência indiana
-            </p>
-            <img
-              src="./assets/elenco/kelly-kapoor.avif"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Vera Mindy Chokalingam</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>24 de junho de 1979</strong></li>
-              <li>Idade: <strong>44 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="stanley-hudson">
+                <h2 class="cast__card__name">
+                  Stanley Hudson (Leslie David Baker)
+                </h2>
+                <p>
+                  Vendedor. Mal humorado, participa de má-vontade das frequentes
+                  reuniões promovidas por Michael, ora cochilando, ora fazendo
+                  palavras-cruzadas.
+                </p>
+                <img
+                  src="./assets/elenco/stanley-hudson.jpg"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Não consigo controlar o que digo às pessoas. Eu passo o
-                      dia inteiro conversando - Kelly Kapoor
-                    </q>
+                    Nome de nascimento:
+                    <strong>Leslie David Baker</strong>
                   </li>
-                  <li>
-                    <q>
-                      Você quer ligar para alguém que te mandou uma mensagem?
-                      Você quer afastá-los? - Kelly Kapoor
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Quero dizer, quem diz exatamente o que está pensando? Que
-                      tipo de jogo é esse? - Kelly Kapoor
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Eu sou uma daquelas poucas pessoas que fica com calor
-                      comendo um cupcake - Kelly Kapoor
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>19 de fevereiro de 1958</strong></li>
+                  <li>Idade: <strong>66 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>Você é um idiota profissional</blockquote>
+                      <blockquote>
+                        Não peço desculpas, a menos que ache que estou errado e,
+                        se você não gostar, pode ir embora
+                      </blockquote>
+                      <blockquote>Eu gaguejei!?</blockquote>
+                      <blockquote>
+                        Rapaz, você perdeu a cabeça, porque eu vou ajudá-lo a
+                        encontrá-la!
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Stanley Hudson</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="darryl-philbin">
-            <h2 class="cast__card__name">Darryl Philbin (Craig Robinson)</h2>
-            <p>Entregador. Responsável pelo depósito.</p>
-            <img
-              src="./assets/elenco/darryl-philbin.jpg"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Craig Phillip Robinson</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>25 de outubro de 1971</strong></li>
-              <li>Idade: <strong>52 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="kelly-kapoor">
+                <h2 class="cast__card__name">Kelly Kapoor (Mindy Kaling)</h2>
+                <p>
+                  Responsável pelo atendimento ao cliente. Fútil e faladora, tem
+                  ascendência indiana
+                </p>
+                <img
+                  src="./assets/elenco/kelly-kapoor.avif"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q> O segredo é se divertir com isso - Darryl Philbin </q>
+                    Nome de nascimento:
+                    <strong>Vera Mindy Chokalingam</strong>
                   </li>
-                  <li>
-                    <q>
-                      Comece a vender várias resmas como um homem - Darryl
-                      Philbin
-                    </q>
-                  </li>
-                  <li>
-                    <q> Não toque no meu rádio - Darryl Philbin </q>
-                  </li>
-                  <li>
-                    <q>
-                      Sentado em cima do seu biscoito, sem nunca ter que
-                      arriscar - Darryl Philbin
-                    </q>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="toby-flenderson">
-            <h2 class="cast__card__name">Toby Flenderson (Paul Lieberstein)</h2>
-            <p>
-              Representante do departamento pessoal. Acanhado e inflexível no
-              cumprimento das diretrizes da matriz (a quem é diretamente
-              subordinado), é visto com antipatia por Michael
-            </p>
-            <img
-              src="./assets/elenco/toby-flenderson.avif"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Paul Bevan Lieberstein</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americano</strong></li>
-              <li>Nascimento: <strong>27 de março de 1967</strong></li>
-              <li>Idade: <strong>57 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
-                  <li>
-                    <q>
-                      Não, eu não diria que tenho paixão por Recursos Humanos -
-                      Toby Flenderson
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Eu começaria do início, mas acho que preciso voltar mais
-                      atrás. - Toby Flenderson
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Por que você sempre tem que ser tão mau comigo? - Toby
-                      Flenderson
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      O que vocês estão falando? Eu tenho uma filha, como posso
-                      ser virgem? - Toby Flenderson
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>24 de junho de 1979</strong></li>
+                  <li>Idade: <strong>44 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Não consigo controlar o que digo às pessoas. Eu passo o
+                        dia inteiro conversando
+                      </blockquote>
+                      <blockquote>
+                        Você quer ligar para alguém que te mandou uma mensagem?
+                        Você quer afastá-los?
+                      </blockquote>
+                      <blockquote>
+                        Quero dizer, quem diz exatamente o que está pensando?
+                        Que tipo de jogo é esse?
+                      </blockquote>
+                      <blockquote>
+                        Eu sou uma daquelas poucas pessoas que fica com calor
+                        comendo um cupcake
+                      </blockquote>
+                      <figcaption>&mdash; <cite>Kelly Kapoor</cite></figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="oscar-martinez">
-            <h2 class="cast__card__name">Oscar Martinez (Oscar Nunez)</h2>
-            <p>
-              Contador. Sua homossexualidade e ascendência mexicana fazem dele
-              alvo constante das piadas de Michael.
-            </p>
-            <img
-              src="./assets/elenco/oscar-martinez.webp"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Oscar Núñez</strong>
-              </li>
-              <li>Nacionalidade: <strong>Cubana, Americano</strong></li>
-              <li>Nascimento: <strong>18 de novembro de 1958</strong></li>
-              <li>Idade: <strong>65 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="darryl-philbin">
+                <h2 class="cast__card__name">
+                  Darryl Philbin (Craig Robinson)
+                </h2>
+                <p>Entregador. Responsável pelo depósito.</p>
+                <img
+                  src="./assets/elenco/darryl-philbin.jpg"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Qualidade atrai qualidade. As pessoas querem estar em um
-                      bom show. - Oscar Martinez
-                    </q>
+                    Nome de nascimento:
+                    <strong>Craig Phillip Robinson</strong>
                   </li>
-                  <li>
-                    <q>
-                      Sou cubano, meus pais são cubanos e não fui adotado. -
-                      Oscar Martinez
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Stand-up, acho muito difícil. Não é realmente minha praia.
-                      - Oscar Martinez
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Sempre adorei improvisar. É minha coisa. - Oscar Martinez
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>25 de outubro de 1971</strong></li>
+                  <li>Idade: <strong>52 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>O segredo é se divertir com isso</blockquote>
+                      <blockquote>
+                        Comece a vender várias resmas como um homem
+                      </blockquote>
+                      <blockquote>Não toque no meu rádio</blockquote>
+                      <blockquote>
+                        Sentado em cima do seu biscoito, sem nunca ter que
+                        arriscar
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Darryl Philbin</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="kevin-malone">
-            <h2 class="cast__card__name">Kevin Malone (Brian Baumgartner)</h2>
-            <p>
-              Contador. Tapado e obeso, demonstra sempre um humor juvenil.
-              Baterista nas horas vagas.
-            </p>
-            <img
-              src="./assets/elenco/kevin-malone.png"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Brian Baumgartner</strong>
-              </li>
-              <li>Nacionalidade: <strong>Cubana, Americano</strong></li>
-              <li>Nascimento: <strong>29 de novembro de 1972</strong></li>
-              <li>Idade: <strong>51 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="toby-flenderson">
+                <h2 class="cast__card__name">
+                  Toby Flenderson (Paul Lieberstein)
+                </h2>
+                <p>
+                  Representante do departamento pessoal. Acanhado e inflexível
+                  no cumprimento das diretrizes da matriz (a quem é diretamente
+                  subordinado), é visto com antipatia por Michael
+                </p>
+                <img
+                  src="./assets/elenco/toby-flenderson.avif"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Tenho muito pouca paciência para estupidez - Kevin Malone
-                    </q>
+                    Nome de nascimento:
+                    <strong>Paul Bevan Lieberstein</strong>
                   </li>
-                  <li>
-                    <q>
-                      Eu mereço umas férias. Às vezes o Batman tem que tirar a
-                      capa - Kevin Malone
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Você acha que esta é uma grande festa? Esse bolo tem
-                      legumes nele como uma barra de salada! - Kevin Malone
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Eu tenho seis números, mais um e teria sido um número de
-                      telefone completo - Kevin Malone
-                    </q>
+                  <li>Nacionalidade: <strong>Americano</strong></li>
+                  <li>Nascimento: <strong>27 de março de 1967</strong></li>
+                  <li>Idade: <strong>57 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Não, eu não diria que tenho paixão por Recursos Humanos
+                      </blockquote>
+                      <blockquote>
+                        Eu começaria do início, mas acho que preciso voltar mais
+                        atrás.
+                      </blockquote>
+                      <blockquote>
+                        Por que você sempre tem que ser tão mau comigo?
+                      </blockquote>
+                      <blockquote>
+                        O que vocês estão falando? Eu tenho uma filha, como
+                        posso ser virgem?
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Toby Flenderson</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="phyllis-lapin">
-            <h2 class="cast__card__name">Phyllis Lapin (Phyllis Smith)</h2>
-            <p>
-              Vendedora. Gentil e carinhosa, conhece Michael desde a época da
-              escola.
-            </p>
-            <img
-              src="./assets/elenco/phyllis-lapin.avif"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Phyllis Smith</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americana</strong></li>
-              <li>Nascimento: <strong>10 de junho de 1951</strong></li>
-              <li>Idade: <strong>72 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
+              </div>
+              <div class="cast__card" id="oscar-martinez">
+                <h2 class="cast__card__name">Oscar Martinez (Oscar Nunez)</h2>
+                <p>
+                  Contador. Sua homossexualidade e ascendência mexicana fazem
+                  dele alvo constante das piadas de Michael.
+                </p>
+                <img
+                  src="./assets/elenco/oscar-martinez.webp"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
                   <li>
-                    <q>
-                      Você deve pedir a coisa mais cara do cardápio, para que
-                      ele saiba que você vale a pena - Phyllis Lapin
-                    </q>
+                    Nome de nascimento:
+                    <strong>Oscar Núñez</strong>
                   </li>
-                  <li>
-                    <q> Não é divertido? Não usar sapatos - Phyllis Lapin </q>
-                  </li>
-                  <li>
-                    <q>
-                      Você está adorável. Seu vestido é muito branco. Tão
-                      branco, meus olhos estão queimando - Phyllis Lapin
-                    </q>
-                  </li>
-                  <li>
-                    <q> Você diz isso toda semana - Phyllis Lapin </q>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="cast__card" id="angela-martin">
-            <h2 class="cast__card__name">Angela Martin (Angela Kinsey)</h2>
-            <p>
-              Contadora. Rígida e séria, vive sozinha e tem mania por gatos.
-            </p>
-            <img
-              src="./assets/elenco/angela-martin.webp"
-              alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
-              width="50%"
-            />
-            <ul class="cast__card__menu">
-              <li>
-                Nome de nascimento:
-                <strong>Angela Kinsey</strong>
-              </li>
-              <li>Nacionalidade: <strong>Americana</strong></li>
-              <li>Nascimento: <strong>25 de junho de 1971</strong></li>
-              <li>Idade: <strong>52 anos</strong></li>
-              <li>
-                Citações famosas:
-                <ul>
-                  <li>
-                    <q>
-                      Normalmente não gosto de fazer as pessoas rirem - Angela
-                      Martin
-                    </q>
-                  </li>
-                  <li>
-                    <q
-                      >Eu quero uma escultura de manteiga de um gato! - Angela
-                      Martin
-                    </q>
-                  </li>
-                  <li>
-                    <q>
-                      Aposto que ela vai comê-los direto da sua mão com aqueles
-                      dentes grandes e fortes - Angela Martin
-                    </q>
-                  </li>
-                  <li>
-                    <q
-                      >Bem, espero que você tenha se divertido hoje, porque você
-                      nunca mais vai dar uma festa - Angela Martin
-                    </q>
+                  <li>Nacionalidade: <strong>Cubana, Americano</strong></li>
+                  <li>Nascimento: <strong>18 de novembro de 1958</strong></li>
+                  <li>Idade: <strong>65 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Qualidade atrai qualidade. As pessoas querem estar em um
+                        bom show.
+                      </blockquote>
+                      <blockquote>
+                        Sou cubano, meus pais são cubanos e não fui adotado.
+                      </blockquote>
+                      <blockquote>
+                        Stand-up, acho muito difícil. Não é realmente minha
+                        praia.
+                      </blockquote>
+                      <blockquote>
+                        Sempre adorei improvisar. É minha coisa.
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Oscar Martinez</cite>
+                      </figcaption>
+                    </figure>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
+              </div>
+              <div class="cast__card" id="kevin-malone">
+                <h2 class="cast__card__name">
+                  Kevin Malone (Brian Baumgartner)
+                </h2>
+                <p>
+                  Contador. Tapado e obeso, demonstra sempre um humor juvenil.
+                  Baterista nas horas vagas.
+                </p>
+                <img
+                  src="./assets/elenco/kevin-malone.png"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
+                  <li>
+                    Nome de nascimento:
+                    <strong>Brian Baumgartner</strong>
+                  </li>
+                  <li>Nacionalidade: <strong>Cubana, Americano</strong></li>
+                  <li>Nascimento: <strong>29 de novembro de 1972</strong></li>
+                  <li>Idade: <strong>51 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Tenho muito pouca paciência para estupidez
+                      </blockquote>
+                      <blockquote>
+                        Eu mereço umas férias. Às vezes o Batman tem que tirar a
+                        capa
+                      </blockquote>
+                      <blockquote>
+                        Você acha que esta é uma grande festa? Esse bolo tem
+                        legumes nele como uma barra de salada!
+                      </blockquote>
+                      <blockquote>
+                        Eu tenho seis números, mais um e teria sido um número de
+                        telefone completo
+                      </blockquote>
+                      <figcaption>&mdash; <cite>Kevin Malone</cite></figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <div class="cast__card" id="phyllis-lapin">
+                <h2 class="cast__card__name">Phyllis Lapin (Phyllis Smith)</h2>
+                <p>
+                  Vendedora. Gentil e carinhosa, conhece Michael desde a época
+                  da escola.
+                </p>
+                <img
+                  src="./assets/elenco/phyllis-lapin.avif"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
+                  <li>
+                    Nome de nascimento:
+                    <strong>Phyllis Smith</strong>
+                  </li>
+                  <li>Nacionalidade: <strong>Americana</strong></li>
+                  <li>Nascimento: <strong>10 de junho de 1951</strong></li>
+                  <li>Idade: <strong>72 anos</strong></li>
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Você deve pedir a coisa mais cara do cardápio, para que
+                        ele saiba que você vale a pena
+                      </blockquote>
+                      <blockquote>Não é divertido? Não usar sapatos</blockquote>
+                      <blockquote>
+                        Você está adorável. Seu vestido é muito branco. Tão
+                        branco, meus olhos estão queimando
+                      </blockquote>
+                      <blockquote>Você diz isso toda semana</blockquote>
+                      <figcaption>&mdash; <cite>Kevin Malone</cite></figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <div class="cast__card" id="angela-martin">
+                <h2 class="cast__card__name">Angela Martin (Angela Kinsey)</h2>
+                <p>
+                  Contadora. Rígida e séria, vive sozinha e tem mania por gatos.
+                </p>
+                <img
+                  src="./assets/elenco/angela-martin.webp"
+                  alt="Michael Scott de terno sentado em uma mesa, com os dedos entrelaçados, olhando atentamente para a câmera com uma expressão séria. um troféu e uma planta são visíveis ao fundo"
+                  width="50%"
+                />
+                <ul class="cast__card__menu">
+                  <li>
+                    Nome de nascimento:
+                    <strong>Angela Kinsey</strong>
+                  </li>
+                  <li>Nacionalidade: <strong>Americana</strong></li>
+                  <li>Nascimento: <strong>25 de junho de 1971</strong></li>
+                  <li>Idade: <strong>52 anos</strong></li>
+
+                  <li class="cast__card__quotes">
+                    <strong>Citações famosas:</strong>
+                    <figure class="cast__card__quote">
+                      <blockquote>
+                        Normalmente não gosto de fazer as pessoas rirem
+                      </blockquote>
+                      <blockquote>
+                        Eu quero uma escultura de manteiga de um gato!
+                      </blockquote>
+                      <blockquote>
+                        Aposto que ela vai comê-los direto da sua mão com
+                        aqueles dentes grandes e fortes
+                      </blockquote>
+                      <blockquote>
+                        Bem, espero que você tenha se divertido hoje, porque
+                        você nunca mais vai dar uma festa
+                      </blockquote>
+                      <figcaption>
+                        &mdash; <cite>Angela Martin</cite>
+                      </figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
-      <footer class="footer container">
-        <div class="footer__bg">
-          <span
+      <footer class="footer__bg">
+        <div class="footer container">
+          <span class="copyright"
             >Feito com ❤️ por
             <a href="https://www.linkedin.com/in/jorgeguedess/" target="_blank"
               >Jorge Guedes</a

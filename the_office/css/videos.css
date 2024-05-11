@@ -1,0 +1,49 @@
+.video__container {
+  padding-block: 4rem;
+}
+
+.video__container .title {
+  margin-bottom: 3rem;
+}
+
+.video__container .videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 1rem;
+}
+
+.video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.video iframe {
+  width: 100%;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.video .video__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video .video__menu strong {
+  color: #0b1423;
+}
+
+@media (min-width: 640px) {
+  .video__container .videos {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .video {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+}

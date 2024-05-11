@@ -1,0 +1,55 @@
+.header__bg {
+  width: 100%;
+  background: #070f1b;
+  color: #fff;
+  padding-block: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  width: 9rem;
+}
+
+.header a {
+  padding-block: 0.5rem;
+}
+
+.header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s;
+}
+
+.header .menu a {
+  font-weight: 500;
+  padding-block: 0.5rem;
+}
+
+.header .menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  margin-top: 0.25rem;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.header .menu a:hover::after,
+.header .menu a:focus::after {
+  width: 100%;
+  background: #ffac3c;
+}
+
+.header .menu a:hover,
+.header .menu a:focus {
+  color: #ffac3c;
+}

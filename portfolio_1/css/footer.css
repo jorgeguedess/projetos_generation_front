@@ -1,0 +1,24 @@
+.footer__bg {
+  width: 100%;
+  background: var(--purple);
+  color: var(--white);
+}
+
+.footer {
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.footer .copyright {
+  font-size: 0.875rem;
+}
+
+.footer .copyright a {
+  font-weight: 600;
+  padding-block: 0.5rem;
+}
+
+.footer .copyright a:hover,
+.footer .copyright a:focus {
+  color: var(--gray);
+}

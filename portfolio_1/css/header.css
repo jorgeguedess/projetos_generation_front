@@ -1,0 +1,44 @@
+.header__bg {
+  width: 100%;
+  background: var(--purple-dark);
+  color: var(--white);
+  padding-block: 1.25rem;
+  position: fixed;
+  filter: opacity(0.9);
+}
+
+.header {
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header a {
+  padding-block: 0.5rem;
+  font-weight: 600;
+}
+
+.header .menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+.header .menu a:hover::after,
+.header .menu a:focus::after {
+  width: 100%;
+}

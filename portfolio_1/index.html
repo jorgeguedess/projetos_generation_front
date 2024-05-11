@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Portfólio - Jorge Guedes</title>
   </head>
   <body>
@@ -33,7 +42,12 @@
                 Lorem ipsum dolor sit amet consectetur adipsicing elit. Quod
                 error veniam in voluptatem magni quisquam
               </p>
-              <button class="btn">Explore</button>
+              <a
+                href="https://github.com/jorgeguedess?tab=repositories"
+                target="_blank"
+                class="btn"
+                >Explore</a
+              >
             </div>
             <div class="welcome__image">
               <img src="./assets/astronauta.svg" alt="Astronauta" />
@@ -81,6 +95,7 @@
                     <a
                       href="https://www.linkedin.com/in/jorgeguedess/"
                       target="_blank"
+                      class="social_link"
                     >
                       <img
                         src="./assets/linkedin.svg"
@@ -89,7 +104,11 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/jorgeguedess" target="_blank">
+                    <a
+                      href="https://github.com/jorgeguedess"
+                      target="_blank"
+                      class="social_link"
+                    >
                       <img
                         src="./assets/github.svg"
                         alt="Github de Jorge Guedes"
@@ -100,6 +119,7 @@
                     <a
                       href="https://www.instagram.com/juninho4492/"
                       target="_blank"
+                      class="social_link"
                     >
                       <img
                         src="./assets/instagram.svg"
@@ -122,7 +142,13 @@
                 </div>
                 <div class="input_group">
                   <label for="email">Email:</label>
-                  <input type="email" name="email" id="email" required />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="fulano@email.com"
+                    required
+                  />
                 </div>
                 <div class="input_group">
                   <label for="subject">Assunto:</label>

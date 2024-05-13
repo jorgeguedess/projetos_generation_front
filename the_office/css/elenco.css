@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: row;
   overflow: auto;
+  gap: 2rem;
 }
 
 .cast__intro__menu li {
@@ -66,6 +67,7 @@
   }
 
   .cast__intro__menu {
+    gap: 0;
     flex-direction: column;
   }
 

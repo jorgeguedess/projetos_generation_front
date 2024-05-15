@@ -17,9 +17,19 @@
   <body>
     <div id="app">
       <header class="header__bg">
-        <nav class="header container">
-          <a href="#" class="soon">Universe</a>
-          <ul class="menu">
+        <div id="header" class="container">
+          <a href="#" class="logo">Universe</a>
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu">
             <li class="item">
               <a href="#">Home</a>
             </li>
@@ -30,6 +40,7 @@
               <a href="#contact">Contate Me</a>
             </li>
           </ul>
+        </div>
         </nav>
       </header>
       <main class="main__bg">
@@ -53,32 +64,7 @@
               <img src="./assets/astronauta.svg" alt="Astronauta" />
             </div>
           </section>
-          <section id="about">
-            <div class="about__content">
-              <h1 class="title">Quem sou eu?</h1>
-              <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-                perferendis iste rerum alias repudiandae quasi ab dolor
-                obcaecati cumque soluta ipsum amet consectetur adipisicing.
-              </p>
-              <div class="github_info">
-                <a
-                  class="btn"
-                  href="https://github.com/jorgeguedess"
-                  target="_blank"
-                  >Github</a
-                >
-                <span id="followers">66 Seguidores</span>
-                <span id="repositories">48 Repositórios</span>
-              </div>
-            </div>
-            <div class="about__image">
-              <img
-                src="https://avatars.githubusercontent.com/u/92119345?v=4"
-                alt="Imagem de um avatar padrão"
-              />
-            </div>
-          </section>
+          <section id="about"></section>
           <section id="contact">
             <div class="contact__content">
               <h1 class="title">Me Contate</h1>
@@ -182,5 +168,7 @@
         </div>
       </footer>
     </div>
+    <!-- JS -->
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
